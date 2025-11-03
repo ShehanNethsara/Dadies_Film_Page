@@ -1,0 +1,69 @@
+    /* ---------- Page Layout ---------- */
+body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 200px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+p {
+    max-width: 700px;
+    margin: 20px auto;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #ddd; /* Slightly gray for readability */
+}
+    div  img {
+        width: 200px;          /* Set a fixed width */
+        height: 200px;         /* Set a fixed height */
+        object-fit: cover;     /* Ensures image covers the box without distortion */
+        margin: 10px;          /* Space between images */
+        border-radius: 10px;   /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Add subtle shadow */
+        transition: transform 0.3s ease;       /* Smooth hover effect */
+    }
+
+    div  img:hover {
+        transform: scale(1.05); /* Slight zoom on hover */
+    }
+
+/* ---------- Social Icons ---------- */
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    margin: 0 15px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #999; /* Gray on hover */
+    transform: scale(1.2);
+}
+
+/* Add a thin white line at bottom for cinematic effect */
+footer {
+    margin-top: 40px;
+    border-top: 1px solid #444;
+    padding: 15px;
+    font-size: 14px;
+    color: #777;
+}
