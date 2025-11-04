@@ -85,7 +85,7 @@ footer {
 /* Tablets */
 @media (max-width: 768px) {
     header img {
-        width: 150px;
+        width: 250px;
     }
 
     h1 {
@@ -111,7 +111,7 @@ footer {
 /* Mobile Phones */
 @media (max-width: 480px) {
     header img {
-        width: 120px;
+        width: 200px;
     }
 
     h1 {
