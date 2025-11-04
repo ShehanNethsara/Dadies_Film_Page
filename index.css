@@ -1,14 +1,14 @@
-    /* ---------- Page Layout ---------- */
+/* ---------- Base Styles ---------- */
 body {
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
+    background-color: #000;
+    color: #fff;
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
-img {
+header img {
     width: 200px;
     margin-top: 40px;
     border-radius: 10px;
@@ -23,23 +23,35 @@ h1 {
 p {
     max-width: 700px;
     margin: 20px auto;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.6;
-    color: #ddd; /* Slightly gray for readability */
+    color: #ddd;
+    padding: 0 20px;
 }
-    div  img {
-        width: 200px;          /* Set a fixed width */
-        height: 200px;         /* Set a fixed height */
-        object-fit: cover;     /* Ensures image covers the box without distortion */
-        margin: 10px;          /* Space between images */
-        border-radius: 10px;   /* Rounded corners */
-        box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Add subtle shadow */
-        transition: transform 0.3s ease;       /* Smooth hover effect */
-    }
 
-    div  img:hover {
-        transform: scale(1.05); /* Slight zoom on hover */
-    }
+/* ---------- Work Section ---------- */
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.work img {
+    width: 250px;
+    height: auto;              /* Keep natural image height */
+    object-fit: contain;       /* Show full image */
+    background-color: #000;    /* Fills any empty space around image */
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    transition: opacity 0.3s ease;
+}
+
+.work img:hover {
+    opacity: 0.9;              /* Optional: small fade instead of zoom */
+}
+
 
 /* ---------- Social Icons ---------- */
 .social-icons {
@@ -55,15 +67,73 @@ p {
 }
 
 .social-icons a:hover {
-    color: #999; /* Gray on hover */
+    color: #999;
     transform: scale(1.2);
 }
 
-/* Add a thin white line at bottom for cinematic effect */
+/* ---------- Footer ---------- */
 footer {
     margin-top: 40px;
     border-top: 1px solid #444;
     padding: 15px;
     font-size: 14px;
     color: #777;
+}
+
+/* ---------- Responsive Design ---------- */
+
+/* Tablets */
+@media (max-width: 768px) {
+    header img {
+        width: 150px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .work img {
+        width: 80%;
+        height: auto;
+    }
+
+
+    .social-icons a {
+        font-size: 26px;
+        margin: 0 10px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    header img {
+        width: 120px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .work img {
+        width: 90%;
+        height: auto;
+    }
+
+
+    .social-icons a {
+        font-size: 24px;
+        margin: 0 8px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
 }
